@@ -1,4 +1,5 @@
 import './App.css'
+import { Button } from './components/Button'
 import { Greet } from './components/Greet'
 import { Header } from './components/Header'
 import { Oscar } from './components/Oscar'
@@ -45,6 +46,12 @@ function App() {
         </Header>
       </Oscar>
       <Greet name='Eliot' isLoggedIn={true} />
+      <Button handleClick={(e) => console.log('Click event for button' + e.detail)}>
+        Click this
+      </Button>
+      <Button handleClick={(e) => console.log('Click event for button' + e.isTrusted)}>
+        Click this
+      </Button>
     </>
   )
 }
