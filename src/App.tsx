@@ -1,5 +1,6 @@
 import './App.css'
 import { Button } from './components/Button'
+import { Container } from './components/Container'
 import { Greet } from './components/Greet'
 import { Header } from './components/Header'
 import { Input } from './components/Input'
@@ -54,6 +55,7 @@ function App() {
         Click this
       </Button>
       <Input handleChange={(e) => e.target.value} value='' />
+      <Container styles={{ border: '1px solid black', padding: '1rem' }} />
     </>
   )
 }
