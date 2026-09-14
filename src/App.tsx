@@ -2,6 +2,7 @@ import './App.css'
 import { Button } from './components/Button'
 import { Greet } from './components/Greet'
 import { Header } from './components/Header'
+import { Input } from './components/Input'
 import { Oscar } from './components/Oscar'
 import { Person } from './components/Person'
 import { PersonList } from './components/PersonList'
@@ -52,6 +53,7 @@ function App() {
       <Button handleClick={(e) => console.log('Click event for button' + e.isTrusted)}>
         Click this
       </Button>
+      <Input handleChange={(e) => e.target.value} value='' />
     </>
   )
 }
